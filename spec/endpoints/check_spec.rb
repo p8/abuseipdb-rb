@@ -9,9 +9,8 @@ RSpec.describe Abuseipdb::Endpoints::Check do
   end
 
   let(:params) { { ipAddress: "8.8.8.8" } }
-  let(:client) { Abuseipdb.client }
 
-  subject(:check) { client.check }
+  subject(:check) { Abuseipdb.check }
 
   context '#call' do
     let(:response) do

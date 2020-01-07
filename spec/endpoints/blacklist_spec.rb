@@ -9,9 +9,8 @@ RSpec.describe Abuseipdb::Endpoints::Blacklist do
   end
 
   let(:params) { { limit: 10, countMinimum: 15, maxAgeInDays: 60 } }
-  let(:client) { Abuseipdb.client }
 
-  subject(:blacklist) { client.blacklist }
+  subject(:blacklist) { Abuseipdb.blacklist }
 
   context '#call' do
     let(:response) do
