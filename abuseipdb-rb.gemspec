@@ -37,6 +37,6 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "rspec", "~> 3.0"
   spec.add_development_dependency "vcr", '~> 4.0', '>= 4.0.0'
 
-  spec.add_runtime_dependency 'faraday', '~> 0.15', '>= 0.15.2'
-  spec.add_runtime_dependency 'faraday_middleware', '~> 0.13', '>= 0.12.2'
+  spec.add_runtime_dependency 'faraday', '~> 1.0', '>= 0.15.2'
+  spec.add_runtime_dependency 'faraday_middleware', '~> 1.0', '>= 0.12.2'
 end
